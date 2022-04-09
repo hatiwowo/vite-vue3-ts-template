@@ -1,0 +1,26 @@
+// 占满父元素
+@mixin fillParent {
+    width: 100%;
+    height: 100%;
+}
+
+// 绝对定位占满父元素
+@mixin absoluteFillParent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include fillParent;
+}
+
+// flex居中
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 高度占满宽度自适应
+@mixin h100wMC {
+    height: 100%;
+    width: max-content;
+}
